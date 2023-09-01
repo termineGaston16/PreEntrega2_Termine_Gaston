@@ -1,0 +1,1490 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'ChakraPetch';
+    src: url('../fonts/ChakraPetch-Bold.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------------------ 000px - 480px ------------------ */
+/*  ------------------ BODY ------------------ */
+body {
+    font-family: 'ChakraPetch', 'Times New Roman', Times, serif;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    background-image: url(../img/index/fondo-body.png);
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: repeat;
+
+}
+
+.headerHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 500px;
+
+    background-image: url(../img/index/barra-nav-logos.png);
+    background-size: cover;
+
+}
+
+/*  BARRA NAV DE LOGOS PRINCIPALES */
+.navHome {
+    display: flex;
+    justify-content: center;
+    margin-top: -20%;
+}
+
+.listaNavHome {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*  MAIN HOME */
+.mainHome {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+/*  PRIMERAS IMPRESIONES */
+.primerasImpresionesBloque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+
+
+}
+
+.tituloPrimerasImpresiones {
+    color: white;
+    font-size: 5.5vw;
+    margin-top: 5%;
+}
+
+.textoPrimerasImpresiones {
+    color: white;
+    font-size: 4.0vw;
+    margin-bottom: 5%;
+}
+
+/* SPLATOON HOME */
+.spHome {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+/* BARRA DIVISORA */
+.barraDivisoraHome {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/index/fondo-barra-movimiento-home.png);
+    background-size: 600px 200px;
+}
+
+.tituloBarraDivisoraHome {
+    color: white;
+    font-size: 5.5vw;
+    padding: 3% 0px;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.555);
+}
+
+/* MENU DE BOTONES DESPLAZABLES */
+.botonesDesplazarBarraDivisoraHome {
+    display: none;
+}
+
+/* MENU SELECTOR DE JUEGO*/
+.menuSelectorDeJuego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+    background-image: url(../img/index/menu-ima-navegator-fondo.jpg);
+    background-size: cover;
+
+    gap: 20px;
+}
+
+.imagenLogoEnContenedorDeImagenMenuSelector {
+    width: 90%;
+    height: auto;
+    margin: 5% 0px 0px 5%;
+
+}
+
+/* CONTENEDOR DE IMAGEN */
+
+.contenedorDeImagenMenuSelector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    border: 10px rgb(247, 247, 182) ridge;
+
+    width: 90%;
+    height: 500px;
+
+    margin: 5% 0px;
+}
+
+.imagenEnContenedorDeImagenMenuSelector {
+    width: 900px;
+    height: auto;
+}
+
+.tituloContenedorDeImagenMenuSelector {
+    display: none;
+}
+
+/* FOOTER HOME */
+/* MENSAJE */
+.footerHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../img/index/footer-home-background.png);
+    background-size: cover;
+
+    padding: 5% 0px;
+    gap: 20px;
+}
+
+.creditosFooterHome {
+    color: white;
+    font-size: 5.5vw;
+    text-shadow: 1px 1px aqua;
+}
+
+.yo {
+    font-family: cursive;
+    font-size: 10.0vw;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px rgb(174, 0, 255);
+}
+
+.botonContactoPersonal {
+    width: 45%;
+    border-radius: 10px;
+    border: solid aqua 1px;
+    background: linear-gradient(to bottom right, aqua, white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 4.0vw;
+    font-family: 'ChakraPetch', 'Times New Roman', Times, serif;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.botonContactoPersonalSegundaCapa {
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(48, 48, 48));
+    width: 97%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.9s;
+}
+
+.botonContactoPersonal:active .botonContactoPersonalSegundaCapa {
+    background: none;
+}
+
+.botonContactoPersonal:active {
+    transform: scale(0.9);
+}
+
+/* ENLACES A NINTENDO */
+.navFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlacesDeNintendoDerechosDeAutor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.botonContactoNintendo {
+    background: linear-gradient(to bottom right, red, rgb(255, 40, 40));
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.botonContactoNintendoLink {
+    font-size: 3.6vw;
+    font-family: 'ChakraPetch', 'Times New Roman', Times, serif;
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0px;
+}
+
+.botonContactoNintendoSegundaCapa {
+    background-color: rgb(14, 14, 14);
+    width: 95%;
+    height: 90%;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.botonContactoNintendo:active .botonContactoNintendoSegundaCapa {
+    background: none;
+}
+
+.botonContactoNintendo:active {
+    transform: scale(0.9);
+}
+
+/*  ------------------ GAME 1 ------------------ */
+/*  ------------------ BODY ------------------ */
+
+.bodyGame {
+    font-family: 'ChakraPetch', 'Times New Roman', Times, serif;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url(../img/spl1/home/fondo-body.jpeg);
+    background-size: 1150px 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0%;
+}
+
+/* BARRA DE NAVEGACION */
+
+.navGame {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    gap: 15px;
+    z-index: 5;
+}
+
+.botonAbrirNavGame img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botonNavGame {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.listaNavGame {
+    max-height: 0;
+    overflow: scroll;
+    list-style-type: none;
+    transition: max-height 0.9s ease-in-out;
+    /* Agregamos una transición suave */
+}
+
+input[type="checkbox"]:checked~.listaNavGame {
+    max-height: 350px;
+    /* Ajusta la altura máxima según tu contenido */
+    transition: max-height 0.9s ease-in-out;
+    /* Aplicamos la misma transición al desplegar */
+}
+
+input[type="checkbox"]:checked~.botonAbrirNavGame img {
+    opacity: 40%;
+    transform: scale(0.9);
+}
+
+
+/* MAIN */
+/* INFORMACION PRINCIPAL */
+
+.mainGame {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    width: 100%;
+
+    gap: 150px;
+}
+
+/* SECCION */
+.informacionPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+.tituloInformacionPrincipal {
+    text-align: center;
+    color: white;
+
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.555);
+    width: 70%;
+
+    font-size: 10.0vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-image: url(../img/spl1/home/fondo-titulo-game.png);
+    background-position: center;
+    border-radius: 15px;
+
+
+}
+
+/* ARTICULO */
+.articuloDeLaSeccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../img/spl1/home/fondo-articulo-vista-movil.png);
+    background-position: center center;
+
+}
+
+/* CONTENEDOR CON INFORMACION */
+.contenedorConInformacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorDelTexto {
+    margin: 10% 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(29, 29, 29);
+    border-radius: 25px;
+
+}
+
+.textoDentroDelContendor {
+    margin: 10%;
+    color: white;
+    text-align: center;
+    font-size: 6.0vw;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.555);
+}
+
+/*  ------------------ MEDIA QUERY ------------------ */
+/*  ------------------ (481px / 768px) ------------------ */
+
+@media(min-width: 481px) and (max-width: 768px) {
+
+    /* -------------------------------- INDEX --------------------------------*/
+
+    /* HEADER */
+    .headerHome {
+        height: 750px;
+    }
+
+    /*  PRIMERAS IMPRESIONES */
+    .tituloPrimerasImpresiones {
+        font-size: 4.0vw;
+    }
+
+    .textoPrimerasImpresiones {
+        font-size: 3.0vw;
+    }
+
+    /* MENU DE BOTONES DESPLAZABLES */
+    .botonesDesplazarBarraDivisoraHome {
+        display: none;
+    }
+
+    /* SELECTOR IMAGEN */
+    #off-the-hook-img-por {
+        width: 700px !important;
+        position: relative;
+        top: 50px;
+    }
+
+    .tituloContenedorDeImagenMenuSelector {
+        display: none;
+    }
+
+
+    /* FOOTER HOME */
+    .creditosFooterHome {
+        font-size: 3.5vw;
+    }
+
+    .yo {
+        font-size: 7.0vw;
+    }
+
+    .botonContactoPersonal {
+        font-size: 3.0vw !important;
+    }
+
+    .botonContactoNintendoLink {
+        font-size: 2.7vw;
+    }
+
+    /* -------------------------------- GAME 1 --------------------------------*/
+
+    /* BARRA DE NAVEGACION */
+    .navGame {
+        width: 10%;
+    }
+
+    .logosBarraNav {
+        width: 40% !important;
+    }
+
+    /* PRIMERAS IMPRESIONES */
+    .logoMain {
+        width: 70% !important;
+    }
+
+    /* BARRA DIVISORA */
+    .tituloBarraDivisoraHome {
+        font-size: 4.0vw;
+    }
+
+    .imagenLogoEnContenedorDeImagenMenuSelector {
+        width: 70%;
+    }
+
+    /* ARTICULO DE LA SECCION*/
+    .articuloDeLaSeccion {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* SECCION */
+    .tituloInformacionPrincipal {
+        font-size: 6.0vw;
+    }
+
+    /* CONTENEDOR CON INFORMACION */
+    .textoDentroDelContendor {
+        font-size: 4.0vw;
+    }
+}
+
+
+
+/*  ------------------ MEDIA QUERY ------------------ */
+/*  ------------------ (769px / 1279px) ------------------ */
+@media(min-width: 769px) and (max-width: 1279px) {
+
+    /*  ------------------ INDEX ------------------ */
+    /*  ------------------ BODY ------------------ */
+
+    .headerHome {
+        height: 300px;
+        background-position: center bottom;
+    }
+
+    .navHome {
+        margin-top: 0%;
+        margin-top: -10%;
+    }
+
+    /*  BARRA NAV DE LOGOS PRINCIPALES */
+    .listaNavHome {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .logosBarraNav {
+        width: 80% !important;
+    }
+
+    #logosBarraNavsp1 {
+        transition: all 0.3s ease;
+
+    }
+
+    #logosBarraNavsp1:hover {
+        transform: scale(1.1);
+    }
+
+    #logosBarraNavsp2 {
+        transition: all 0.3s ease;
+
+    }
+
+    #logosBarraNavsp2:hover {
+        transform: scale(1.1);
+    }
+
+    #logosBarraNavsp3 {
+        transition: all 0.3s ease;
+
+    }
+
+    #logosBarraNavsp3:hover {
+        transform: scale(1.1);
+    }
+
+    /*  MAIN HOME */
+    /*  PRIMERAS IMPRESIONES */
+
+    .logoMain {
+        width: 45% !important;
+        transition: all 0.3s ease;
+    }
+
+    .logoMain:hover {
+        transform: scale(1.1);
+
+    }
+
+    .tituloPrimerasImpresiones {
+        font-size: 2.8vw;
+    }
+
+    .textoPrimerasImpresiones {
+        font-size: 2.0vw;
+        width: 80%;
+    }
+
+    .iframeVideoPrimerasImpresiones {
+        width: 70%;
+        height: 410px;
+    }
+
+    /* SPLATOON HOME */
+    /* BARRA DIVISORA */
+    .tituloBarraDivisoraHome {
+        font-size: 2.8vw;
+        ;
+    }
+
+    .spanEnBarraDivisora {
+        font-size: 2.4vw !important;
+    }
+
+    .botonesDesplazarBarraDivisoraHome {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listaBotonesDesplazarBarraDivisoraHome {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 50%;
+    }
+
+    /* MENU SELECTOR DE JUEGO */
+
+    .menuSelectorDeJuego {
+        flex-direction: row;
+    }
+
+    .imagenLogoEnContenedorDeImagenMenuSelector {
+        position: absolute;
+        width: 30%;
+        left: 0%;
+        z-index: 5;
+
+        transition: all 0.3s ease;
+    }
+
+    /* CONTENEDOR DE IMAGEN */
+    .contenedorDeImagenMenuSelector {
+        width: 40%;
+        height: 400px;
+
+        margin: 5% 5%;
+    }
+
+    .imagenEnContenedorDeImagenMenuSelector {
+        width: 790px;
+        height: auto;
+        transition: filter 0.3s;
+    }
+
+    .contenedorDeImagenMenuSelector:hover .imagenEnContenedorDeImagenMenuSelector {
+        filter: grayscale(0.4) blur(7px);
+    }
+
+    .tituloContenedorDeImagenMenuSelector {
+        display: block;
+        position: absolute;
+        color: beige;
+        font-size: 20px;
+        text-align: center;
+
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.555);
+
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        z-index: 2;
+        text-decoration: none;
+    }
+
+    .contenedorDeImagenMenuSelector:hover .tituloContenedorDeImagenMenuSelector {
+        opacity: 1;
+    }
+
+    .contenedorDeImagenMenuSelector:hover .imagenLogoEnContenedorDeImagenMenuSelector {
+        transform: scale(1.1);
+    }
+
+    .imagenLogoEnContenedorDeImagenMenuSelector:hover {
+        transform: scale(1.1);
+    }
+
+    /* SELECTOR IMAGEN */
+    #off-the-hook-img-por {
+        width: 720px !important;
+        position: relative;
+        top: 100px;
+    }
+
+    /* FOOTER HOME */
+    /* MENSAJE */
+
+    .creditosFooterHome {
+        font-size: 2.0vw;
+    }
+
+    .yo {
+        font-size: 3.0vw;
+    }
+
+    .botonContactoPersonal {
+        font-size: 2.0vw;
+        width: auto;
+        transition: filter 0.3;
+        width: 300px;
+
+        cursor: pointer;
+    }
+
+    .botonContactoPersonal:hover {
+        transform: scale(1.2);
+    }
+
+    .botonContactoPersonal:hover .botonContactoPersonalSegundaCapa {
+        background: none;
+        color: rgb(98, 1, 255);
+    }
+
+    .botonContactoPersonal:active {
+        transform: scale(0.7);
+    }
+
+    #botonDisenio {
+        font-size: 2.0vw !important;
+        width: auto;
+        transition: filter 0.3;
+        width: 400px !important;
+    }
+
+    #botonDisenio:hover {
+        background-color: black !important;
+        color: white !important;
+    }
+
+    /* ENLACES A NINTENDO */
+    .enlacesDeNintendoDerechosDeAutor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        list-style-type: none;
+    }
+
+    .botonContactoNintendo {
+        background: linear-gradient(to bottom right, red, rgb(255, 40, 40));
+        width: 200px;
+        border: none;
+        border-radius: 7px;
+        transition: 0.3s;
+    }
+
+    .botonContactoNintendoLink {
+        font-size: 2.0vw;
+    }
+
+    .botonContactoNintendo:hover {
+        transform: scale(0.8);
+        background: linear-gradient(to bottom left, red, rgb(133, 9, 9));
+    }
+
+    .botonContactoNintendo:hover .botonContactoNintendoSegundaCapa {
+        background: none;
+    }
+
+    .botonContactoNintendo:hover .botonContactoNintendoLink {
+        color: rgb(14, 14, 14);
+    }
+
+    /*  ------------------ GAME 1 ------------------ */
+    /*  ------------------ BODY ------------------ */
+
+    .bodyGame {
+        background-size: 1279px 100%;
+    }
+
+    /* BARRA DE NAVEGACION */
+
+    .navGame {
+        width: 5%;
+        right: 10%;
+        top: 10%;
+    }
+
+    .listaNavGame {
+        overflow: hidden;
+    }
+
+    input[type="checkbox"]:checked~.listaNavGame {
+        max-height: 600px;
+    }
+
+    /* MAIN */
+    /* INFORMACION PRINCIPAL */
+    /* SECCION */
+
+    .tituloInformacionPrincipal {
+        font-size: 2.8vw;
+        width: 30%;
+    }
+
+    /* ARTICULO */
+    .articuloDeLaSeccion {
+        flex-direction: row;
+        background-image: url(../img/spl1/home/fondo-articulo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* CONTENEDOR CON INFORMACION */
+
+    .contenedorConInformacion {
+        width: 50%;
+    }
+
+    .textoDentroDelContendor {
+        font-size: 1.5vw;
+    }
+
+    .iframdeDentroDelArticulo {
+        width: 40%;
+        height: 270px;
+
+        border: double rgb(162, 165, 14) 15px !important;
+    }
+
+    .imagenDentroDelArticulo {
+        width: 50%;
+    }
+
+    #contenedorQueNoEntra {
+        display: none;
+    }
+}
+
+/*  ------------------ MEDIA QUERY ------------------ */
+/*  ------------------ (1280px) ------------------ */
+@media(min-width: 1280px) {
+
+    /*  ------------------ INDEX ------------------ */
+    /*  ------------------ BODY ------------------ */
+
+    .headerHome {
+        height: 350px;
+        background-position: center bottom;
+    }
+
+    .navHome {
+        margin-top: 0%;
+        margin-top: -10%;
+    }
+
+    /*  BARRA NAV DE LOGOS PRINCIPALES */
+    .listaNavHome {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .logosBarraNav {
+        width: 60% !important;
+    }
+
+    #logosBarraNavsp1 {
+        transition: all 0.3s ease;
+
+    }
+
+    #logosBarraNavsp1:hover {
+        transform: scale(1.1);
+    }
+
+    #logosBarraNavsp2 {
+        transition: all 0.3s ease;
+
+    }
+
+    #logosBarraNavsp2:hover {
+        transform: scale(1.1);
+    }
+
+    #logosBarraNavsp3 {
+        transition: all 0.3s ease;
+
+    }
+
+    #logosBarraNavsp3:hover {
+        transform: scale(1.1);
+    }
+
+    /*  MAIN HOME */
+    /*  PRIMERAS IMPRESIONES */
+
+    .logoMain {
+        width: 35% !important;
+        transition: all 0.3s ease;
+    }
+
+    .logoMain:hover {
+        transform: scale(1.1);
+
+    }
+
+    .tituloPrimerasImpresiones {
+        font-size: 2.0vw;
+    }
+
+    .textoPrimerasImpresiones {
+        font-size: 1.6vw;
+        width: 80%;
+    }
+
+    .iframeVideoPrimerasImpresiones {
+        width: 60%;
+        height: 460px;
+    }
+
+    /* SPLATOON HOME */
+    /* BARRA DIVISORA */
+    .tituloBarraDivisoraHome {
+        font-size: 2.0vw;
+        ;
+    }
+
+    .spanEnBarraDivisora {
+        font-size: 1.6vw !important;
+    }
+
+    .botonesDesplazarBarraDivisoraHome {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listaBotonesDesplazarBarraDivisoraHome {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 50%;
+    }
+
+    /* MENU SELECTOR DE JUEGO */
+
+    .menuSelectorDeJuego {
+        flex-direction: row;
+    }
+
+    .imagenLogoEnContenedorDeImagenMenuSelector {
+        position: absolute;
+        width: 26%;
+        left: 0%;
+        z-index: 5;
+
+        transition: all 0.3s ease;
+    }
+
+    /* CONTENEDOR DE IMAGEN */
+    .contenedorDeImagenMenuSelector {
+        width: 35%;
+        height: 600px;
+
+        margin: 5% 5%;
+    }
+
+    .imagenEnContenedorDeImagenMenuSelector {
+        width: 1200px;
+        height: auto;
+        transition: filter 0.3s;
+    }
+
+    .contenedorDeImagenMenuSelector:hover .imagenEnContenedorDeImagenMenuSelector {
+        filter: grayscale(0.4) blur(7px);
+    }
+
+    .tituloContenedorDeImagenMenuSelector {
+        display: block;
+        position: absolute;
+        color: beige;
+        font-size: 20px;
+        text-align: center;
+
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.555);
+
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        z-index: 2;
+        text-decoration: none;
+    }
+
+    .contenedorDeImagenMenuSelector:hover .tituloContenedorDeImagenMenuSelector {
+        opacity: 1;
+    }
+
+    .contenedorDeImagenMenuSelector:hover .imagenLogoEnContenedorDeImagenMenuSelector {
+        transform: scale(1.1);
+    }
+
+    .imagenLogoEnContenedorDeImagenMenuSelector:hover {
+        transform: scale(1.1);
+    }
+
+    /* SELECTOR IMAGEN */
+    #off-the-hook-img-por {
+        width: 720px !important;
+        position: relative;
+        top: 100px;
+    }
+
+    #sp2-img-por {
+        width: 1300px !important;
+    }
+
+    #deep-cut-img-por {
+        width: 900px !important;
+    }
+
+    /* FOOTER HOME */
+    /* MENSAJE */
+
+    .creditosFooterHome {
+        font-size: 1.6vw;
+    }
+
+    .yo {
+        font-size: 2.0vw;
+    }
+
+    .botonContactoPersonal {
+        font-size: 1.6vw;
+        width: auto;
+        transition: filter 0.3;
+        width: 300px;
+
+        cursor: pointer;
+    }
+
+    .botonContactoPersonal:hover {
+        transform: scale(1.2);
+    }
+
+    .botonContactoPersonal:hover .botonContactoPersonalSegundaCapa {
+        background: none;
+        color: rgb(98, 1, 255);
+    }
+
+    .botonContactoPersonal:active {
+        transform: scale(0.7);
+    }
+
+    #botonDisenio {
+        font-size: 1.6vw !important;
+        width: auto;
+        transition: filter 0.3;
+        width: 400px !important;
+    }
+
+    #botonDisenio:hover {
+        background-color: black !important;
+        color: white !important;
+    }
+
+    /* ENLACES A NINTENDO */
+    .enlacesDeNintendoDerechosDeAutor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        list-style-type: none;
+    }
+
+    .botonContactoNintendo {
+        background: linear-gradient(to bottom right, red, rgb(255, 40, 40));
+        width: 200px;
+        border: none;
+        border-radius: 7px;
+        transition: 0.3s;
+    }
+
+    .botonContactoNintendoLink {
+        font-size: 1.6vw;
+    }
+
+    .botonContactoNintendo:hover {
+        transform: scale(0.8);
+        background: linear-gradient(to bottom left, red, rgb(133, 9, 9));
+    }
+
+    .botonContactoNintendo:hover .botonContactoNintendoSegundaCapa {
+        background: none;
+    }
+
+    .botonContactoNintendo:hover .botonContactoNintendoLink {
+        color: rgb(14, 14, 14);
+    }
+
+    /*  ------------------ GAME 1 ------------------ */
+    /*  ------------------ BODY ------------------ */
+
+    .bodyGame {
+        background-size: 100% 100%;
+    }
+
+    /* BARRA DE NAVEGACION */
+
+    .navGame {
+        width: 5%;
+        right: 10%;
+        top: 10%;
+    }
+
+    .listaNavGame {
+        overflow: hidden;
+    }
+
+    input[type="checkbox"]:checked~.listaNavGame {
+        max-height: 600px;
+    }
+
+    /* MAIN */
+    /* INFORMACION PRINCIPAL */
+    /* SECCION */
+
+    .tituloInformacionPrincipal {
+        font-size: 2.0vw;
+        width: 30%;
+    }
+
+    /* ARTICULO */
+    .articuloDeLaSeccion {
+        flex-direction: row;
+        background-image: url(../img/spl1/home/fondo-articulo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        gap: 60px;
+    }
+
+    /* CONTENEDOR CON INFORMACION */
+
+    .contenedorConInformacion {
+        width: 45%;
+    }
+
+    .textoDentroDelContendor {
+        font-size: 1.4vw;
+    }
+
+    .iframdeDentroDelArticulo {
+        width: 40%;
+        height: 270px;
+
+        border: double rgb(162, 165, 14) 15px !important;
+    }
+
+    .imagenDentroDelArticulo {
+        width: 40%;
+    }
+
+    #contenedorQueNoEntra {
+        display: none;
+    }
+}
+
+/*  ------------------ CANTANTES ------------------ */
+/* ------------------ 000px - 480px ------------------ */
+/*  ------------------ BODY ------------------ */
+
+.bodyCantantes {
+    background-image: url(../img/index/fondo-body-cantantes.png);
+    background-size: 1150px 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+/* HEADER */
+.headerPaginaCantantes {
+    background-color: rgb(20, 20, 20);
+
+}
+
+.cartaBarraNav {
+    background-size: cover;
+    background-position: center 0%;
+}
+
+.textoDentroCartaBarraNav {
+    color: rgb(61, 255, 71);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.555);
+}
+
+
+/* PORTADA PRINCIPAL */
+.portadaPrincipal {
+    height: 300px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    justify-content: end;
+}
+
+.tituloPrincipalPortadaPrincipal {
+    text-align: start;
+    font-size: 7.0vw;
+
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 212), -2px -2px rgb(21, 255, 0);
+    transform: skewX(-20deg);
+
+    margin-left: 5%;
+}
+
+.subTitutloPrincipalPortadaPrincipal {
+    text-align: start;
+    font-size: 5.0vw;
+
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 212), -2px -2px rgb(21, 255, 0);
+    transform: skewX(-20deg);
+
+}
+
+/*CONTENIDO PRINCIPAL*/
+.ImagenDentroDeContenidoPrincipal {
+    width: 60%;
+    margin: 5%;
+}
+
+.textoDentroDelContenedorUno {
+    color: blueviolet;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    font-size: 1.8em;
+
+    background-color: rgb(12, 12, 12);
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.textoDentroDelContenedorDos {
+    color: blueviolet;
+    font-size: 1.3em;
+
+    background-color: rgb(12, 12, 12);
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.imagenDeCantantes {
+    width: 100%;
+}
+
+/* FOTO Y DESCRIPCION */
+.textoDescriptivoCantantes {
+    margin: 7% 7%;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    color: rgb(22, 22, 22);
+    font-size: 1.3em;
+}
+
+/* LISTA DE REPRODUCCION */
+/* SELECCION*/
+.listaDeMusica {
+    background-color: rgb(12, 12, 12);
+    border-radius: 15px;
+    padding: 5%;
+
+    position: relative;
+}
+
+.tituloDentroDeLaLista {
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px rgb(255, 0, 212), -2px -2px rgb(21, 255, 0);
+
+    background-color: rgb(6, 6, 6);
+    border-radius: 15px;
+    margin-bottom: 5%;
+}
+
+.botonCantantes {
+    z-index: 5;
+    width: 15%;
+
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    transform: rotate(-90deg);
+}
+
+.botonesDeLaLista {
+    border-radius: 15px;
+    background-color: black;
+    border: black 1px solid;
+
+    overflow: auto;
+    height: 325px;
+}
+
+.list-group-item {
+    background-color: rgb(23, 23, 23);
+    color: white;
+    font-size: 1.4em;
+    border: black 1px solid;
+    text-shadow: 2px 2px rgb(255, 0, 212);
+}
+
+.list-group-item.active {
+    background-color: aqua;
+    text-shadow: 2px 2px rgb(21, 255, 0);
+    border: black 1px solid;
+}
+
+/* MUSICA */
+.videosMusicales {
+    background-color: rgb(9, 9, 9);
+    border-radius: 15px;
+    padding: 5%;
+}
+
+.textoConciertoEnVivo {
+    color: white;
+    text-shadow: 2px 2px rgb(18, 18, 18);
+    font-size: 1.4em;
+}
+
+/* CARRUSEL */
+
+.carousel-control-prev,
+.carousel-control-next {
+    border-radius: 50%;
+    background-color: rgb(255, 0, 238);
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    margin: auto 10px;
+}
+
+.carousel-indicators {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.carousel-indicators button {
+    background-color: white;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /* Ajusta la duración y la curva de aceleración según prefieras */
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+/*  ------------------ MEDIA QUERY ------------------ */
+/*  ------------------ (481px / 768px) ------------------ */
+
+@media(min-width: 481px) and (max-width: 768px) {
+
+    /* BARRA DE NAVEGACIÓN DE LOS TITULOS */
+    .cartaBarraNav {
+        background-position: 10%;
+    }
+
+    /* PORTADA PRINCIPAL */
+    .portadaPrincipal {
+        background-size: 800px !important;
+    }
+
+    .tituloPrincipalPortadaPrincipal {
+        font-size: 2.3em;
+    }
+
+    .subTitutloPrincipalPortadaPrincipal {
+        font-size: 4.0vw;
+    }
+
+    /* CONTENIDO PRINCIPAL */
+
+    .ImagenDentroDeContenidoPrincipal {
+        width: 40%;
+    }
+
+    .contenedorDelContenidoPrincipal {
+        width: 80%;
+    }
+
+    .imagenDeCantantes {
+        width: 100%;
+    }
+
+    /* LISTA DE REPRODUCCION */
+    /* SELECCION*/
+
+    .listaDeMusica{
+        width: 100%;
+    }
+
+    .botonCantantes{
+        width: 10%;
+    }
+
+    .videosMusicales{
+        width: 100%;
+    }
+}
+
+/*  ------------------ MEDIA QUERY ------------------ */
+/*  ------------------ (769px) ------------------ */
+@media(min-width: 769px){
+
+    .bodyCantantes {
+        background-size: 100% 100%;
+    }
+
+
+    .imagenvolver{
+        display: none !important;
+    }
+
+     /* PORTADA PRINCIPAL */
+     .portadaPrincipal {
+        background-size: 100% !important;
+    }
+
+    .tituloPrincipalPortadaPrincipal {
+        font-size: 3.5em;
+        left: 0%;
+    }
+
+    .subTitutloPrincipalPortadaPrincipal {
+        font-size: 3.5vw;
+
+    }
+
+     /* CONTENIDO PRINCIPAL */
+
+     .ImagenDentroDeContenidoPrincipal {
+        width: 20%;
+    }
+
+    .contenedorContenidoPrinci{
+        gap: 0px !important;
+    }
+
+    .botonCantantes{
+        display: none;
+    }
+
+}
